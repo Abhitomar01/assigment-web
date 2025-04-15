@@ -479,7 +479,7 @@ img {
 }
 
 img:hover {
-    animation: rotate360 2s linear forwards, fadeIn 2s forwards; /* Extend duration to 2 seconds */
+    animation: rotate5 0.5s linear forwards, fadeIn 2s forwards; /* Update rotation animation to 5 degrees */
     transform: perspective(1000px) rotateX(10deg) rotateY(10deg); /* Add tilting effect */
 }
 
@@ -493,13 +493,13 @@ img:hover {
     }
 }
 
-/* Define 360-degree rotation animation */
-@keyframes rotate360 {
+/* Define 5-degree rotation animation */
+@keyframes rotate5 {
     from {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg); /* Slow down rotation to half a turn */
+        transform: rotate(5deg); /* Rotate only 5 degrees */
     }
 }
 
