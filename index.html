@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Printio</title>
+
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown three-d-effect">
+        <div>
+            <p>Track order</p>
+        </div>
+        <div class="head">
+            <p> <i class="fa-solid fa-location-dot"></i>store Locater</p>
+            <p class="kit">simple kit</p>
+            <div class="Bussinus">Bussinus solutions</div>
+        </div>
+    </header>
+    
+    <nav class="animate__animated animate__fadeIn three-d-effect">
+        <div id="primary-nav" class="nav">
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Printo-logo/printo-logo_1710143759.png?quality=70&format=webp&w=320" alt="">
+            <div>
+                <input type="text" placeholder="Search" aria-label="Search" />
+            </div>
+        </div>
+        <div class="nav2">
+            <h4> <i class="fa-brands fa-rocketchat"></i>Help center</h4>
+            <h5><i class="fa-solid fa-user"></i>Login/Signup</h5>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+        </div>
+        <button id="mobile-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <div class="product-list animate__animated animate__fadeInUp three-d-effect">
+        <p>Same Day delivery</p>
+        <p>stationary</p>
+        <p>Corporate Drinks</p>
+        <p>DrinkWare</p>
+        <p>label and pakaging</p>
+        <p>Apperal</p>
+        <p>signes</p>
+        <p>markating & promo</p>
+        <p>photo gift</p>
+    </div>
+    <div class="hero three-d-effect">
+        <video autoplay muted loop class="hero-video">
+            <source src="data:image/jpeg;base64,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" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="box1 animate__animated animate__zoomIn">
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Joining%20kit/Polos_1743250171.jpg?quality=70&format=webp&w=384" alt="">
+        </div>
+        <div class="box2 animate__animated animate__zoomIn">
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Joining%20kit/Standees_1743250096.jpg?quality=70&format=webp&w=384" alt="">
+        </div>
+        <div class="box3 animate__animated animate__zoomIn">
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Joining%20kit/Certficates_1743250096.jpg?quality=70&format=webp&w=384" alt="">
+        </div>
+        <div class="box4 animate__animated animate__zoomIn">
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Embellishment%20Products/standup-pouches_1741785248.jpg?quality=70&format=webp&w=384" alt="">
+        </div>
+    </div>
+    <div class="main-hero animate__animated animate__fadeIn three-d-effect">
+        <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/banner_1742447155.jpg?quality=70&format=webp&w=1920" alt="">
+    </div>
+    <h1 class="heading animate__animated animate__fadeInUp three-d-effect">Shop By Needs</h1>
+    <div class="main animate__animated animate__fadeIn three-d-effect">
+        <div>
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Invitations/New/For-Startups_1736331266.jpg?quality=70&format=webp&w=640" alt="">
+        </div>
+        <div>
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Invitations/New/Event_1736331613.jpg?quality=70&format=webp&w=640" alt="">
+        </div>
+        <div>
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Invitations/Caf-and-Restaurant--Essentials_1736330909.jpg?quality=70&format=webp&w=640" alt="">
+        </div>
+        <div>
+            <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Invitations/Employee-engagement_1736330909.jpg?quality=70&format=webp&w=640" alt="">
+        </div>
+    </div>
+    <section>
+        <h1 class="heading2 animate__animated animate__fadeInUp three-d-effect">Browse All Categories</h1>
+        <div class="main2 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Business%20cards/app_1735077757.jpg?quality=70&format=webp&w=320" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231214_005635029141_c47bc1_Businesscard.jpg?quality=70&format=webp&w=320" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231216_141759643395_696fb4_Corporate-gifts.jpg?quality=70&format=webp&w=320" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Business%20cards/Stationery_1735076480.jpg?quality=70&format=webp&w=320" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Business%20cards/label_1735077795.jpg?quality=70&format=webp&w=320" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Business%20cards/Stickers_1735076480.jpg?quality=70&format=webp&w=320" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Business%20cards/Photo-ggifts_1735076480.jpg?quality=70&format=webp&w=320" alt="">
+            </div>
+        </div>
+        <div class="main3 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Embellishment%20Products/2_1742027442.jpg?quality=70&format=webp&w=1080" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Embellishment%20Products/1_1742027442.jpg?quality=70&format=webp&w=1080" alt="">
+            </div>
+        </div>
+        <h1 class="heading3 animate__animated animate__fadeInUp three-d-effect">New Launches</h1>
+        <div class="main4 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Joining%20kit/Neew_1743518074.jpg?quality=70&format=webp&w=384" alt="">
+                <p>employ joining kit</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Drinkware/100_1742806850.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Drinkware</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Embellishment%20Products/ne_1742414483.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Exclusive custom notebook</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Embellishment%20Products/Prem_1742413795.jpg?quality=70&format=webp&w=384" alt="">
+                <p>premium finsih stickers</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/Posters/New-launches_1740145039.jpg?quality=70&format=webp&w=384" alt="">
+                <p>raised foil poster</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2025/rite%20on%20notebooks/New-launhces_1740038576.jpg?quality=70&format=webp&w=384" alt="">
+                <p>M&S typed polo t-shirts</p>
+            </div>
+        </div>
+        <h1 id="heading4" class="animate__animated animate__fadeInUp three-d-effect">Popular Products</h1>
+        <div class="main5 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230704_133220599691_2fac88_Business-cards.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Bussinus cards</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230701_190929027821_46f69a_T-shirts.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Apperal</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/Untitled-1_1736447652.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Corportae gifts</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230701_190944751783_42d809_Drinkwares.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Drinkwares</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Home%20page/Popular%20products/pop_1709110533.jpg?quality=70&format=webp&w=384" alt="">
+                <p>mailer boxs</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Home%20page/popular%20category/Awards_1709024758.jpg?quality=70&format=webp&w=384" alt="">
+                <p>awards</p>
+            </div>
+        </div>
+        <div class="main5 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230701_191006462208_002e97_Stickers-new.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Sticker</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230710_184231277177_73614a_Name-plates.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Name plates</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230704_173714441978_e6a257_Backpack.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Bagpacks</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231103_181113759584_5474cf_labels-new.jpg?quality=70&format=webp&w=384" alt="">
+                <p>labels</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231031_233118645004_dbcedd_poly-bag.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Courier polybag</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Home%20page/popular%20category/Poster_1709024357.jpg?quality=70&format=webp&w=384" alt="">
+                <p>posters</p>
+            </div>
+        </div>
+        <h1 id="heading4" class="animate__animated animate__fadeInUp three-d-effect">Stationary</h1>
+        <div class="main5 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Home%20page/Business-card_1711972621.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Business cards</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231214_231214641344_0b73a6_Letter-Head.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Letter head</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231214_231209220048_fa70a5_envelop.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Envelops</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Home%20page/Rubber-stamps_1711972661.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Rubber Stamp</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231214_231220968225_05f929_Notepad-presentation-Mockup.jpg?quality=70&format=webp&w=384" alt="">
+                <p> Notepads</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231214_231227002848_169136_Presentation-folder.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Presentation folder</p>
+            </div>
+        </div>
+        <h1 id="heading4" class="animate__animated animate__fadeInUp three-d-effect">Corporate Gifts</h1>
+        <div class="main5 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230703_164653215732_fd71d9_Gift-Hamper.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Gift Hampers</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230703_164727748871_0b18a9_Backpacks.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Bagpacks</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/New%20year%20kits/Untitledddd-1_1733465391.jpg?quality=70&format=webp&w=384" alt="">
+                <p>New year Hamper 2025</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230704_134830014804_5348b4_Diaires-new.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Diaries</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230703_164742311703_b32d87_Award.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Awards</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230703_164755377346_6c01ab_Drinkware.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Drinkware</p>
+            </div>
+        </div>
+        <h1 id="heading4" class="animate__animated animate__fadeInUp three-d-effect">Signs & Market</h1>
+        <div class="main5 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230703_164653215732_fd71d9_Gift-Hamper.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Name plates</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20230609_140720131497_82711f_Standees.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Standess</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Home%20page/New%20launches/Desk-stand_1709105722.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Arcylic Desk Stands</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Republic-Day-2024/Signange_1706355709.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Banners</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20221224_160546875011_979c85_LF_Stickers.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Large formal sticker</p>
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20221224_160752182152_498d40_Wall_Decals.jpg?quality=70&format=webp&w=384" alt="">
+                <p>Well Decels</p>
+            </div>
+        </div>
+        <section class="product-videos animate__animated animate__fadeInUp three-d-effect">
+            <h1 class="heading4">Product Videos</h1>
+            <div class="video-container">
+                <div class="video-box">
+                    <video controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Product 1</p>
+                </div>
+                <div class="video-box">
+                    <video controls>
+                        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Product 2</p>
+                </div>
+                <div class="video-box">
+                    <video controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Product 3</p>
+                </div>
+            </div>
+        </section>
+        <section class="three-d-model-section animate__animated animate__fadeInUp three-d-effect">
+            <h1 class="heading4">Interactive 3D Model</h1>
+            <canvas id="threeDModelCanvas"></canvas>
+        </section>
+        <script type="module" src="threeDModel.js"></script>
+        <section class="full-video-section animate__animated animate__fadeInUp three-d-effect">
+            <video autoplay muted loop class="full-video">
+                <source src="./local-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <div class="main6 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231102_102253130376_99816a_From-the-blog..jpg?quality=70&format=webp&w=640" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Business%20cards/1_1735298612.jpg?quality=70&format=webp&w=640" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/2024/Business%20cards/2_1735298612.jpg?quality=70&format=webp&w=640" alt="">
+            </div>
+        </div>
+        <div class="main7 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20221226_194116481459_3caab4_Desktop.jpg?quality=70&format=webp&w=1080" alt="">
+            </div>
+            <div>
+                <img class="animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20221226_171940020283_e9090c_Desktop-view.gif?quality=70&format=webp&w=1080" alt="">
+            </div>
+        </div>
+        <img class="hero-img animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/Home%20page/WFH-Gifts_Dropship_Main-Banner-1_1200-x-300pixels_1710412786.jpg?quality=70&format=webp&w=1920" alt="">
+        <img class="hero-img2 animate__animated animate__fadeIn" src="https://printo-s3.dietpixels.net/site/20231213_174747560925_4ee260_Brands-Banner.jpg?quality=70&format=webp&w=1920" alt="">
+        <div class="main8 animate__animated animate__fadeIn three-d-effect">
+            <h1>Printo: A Journey of Printing Excellence and Innovation</h1>
+            <div class="a">We are India's largest print-on-demand platform with a vision to be the world's largest. We have over 15 years of experience in the print industry, 28 retail stores across 6 cities, and have serviced more than 1 Million customers online & offline.</div>
+            <div class="a">From Business Cards to Signage to Employee Joining Kits -- since 2006, Printo has helped 10 lakh+ small, medium & some of India's largest businesses like Google, Accenture & PhonePe</div>
+            <div class="a">Printo is headquartered in Bangalore, India, with a 50,000+ sq. ft production facility. From the first store in Koramangala, Bangalore, Printo has launched 28 retail stores across 6-cities. Order from Printo.in or in-store or talk to our teams today</div>
+        </div>
+        <div class="main9 animate__animated animate__fadeIn three-d-effect">
+            <div>
+                <h1>1M+</h1>
+                <p>Happy Clients</p>
+            </div>
+            <div>
+                <h1>
+                    15,000+
+                </h1>
+                <p>personlize print product</p>
+            </div>
+            <div>
+                <h1>
+                    17 years
+                </h1>
+                <p>of service Excellence</p>
+            </div>
+            <div>
+                <h1>
+                    25+
+                </h1>
+                <p>stores accross city</p>
+            </div>
+        </div>
+    </section>
+    <footer class="animate__animated animate__fadeInUp three-d-effect">
+        <div>
+            <h3>Find stores</h3>
+            <ul>
+                <li>Gurgaon</li>
+                <li>Banglore</li>
+                <li>Delhi</li>
+                <li>Noida</li>
+                <li>Chennai</li>
+                <li>Hydrabad</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Our company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Carrer</li>
+                <li>Blogs</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Support</h3>
+            <ul>
+                <li></li>
+                    Help
+                </li>
+                <li>Bussinus solutions</li>
+                <li> Find stores</li>
+                <li>
+                    My account
+                </li>
+                <li>Track order</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Important Links</h3>
+            <ul>
+                <li>
+                    Privacy policy
+                </li>
+                <li>Delivery & return policy</li>
+                <li>Tems & conditions</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-phone"></i> +91 9684255803
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>care@printio.com
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="foot animate__animated animate__fadeIn three-d-effect">
+        <img class="animate__animated animate__fadeIn" src="https://printo.in/images/payment/visa.png" alt="">
+        <img class="animate__animated animate__fadeIn" src="https://printo.in/images/payment/mastercard.png" alt="">
+        <img class="animate__animated animate__fadeIn" src="https://printo.in/images/payment/upi.png" alt="">
+    </div>
+    <div class="end animate__animated animate__fadeInUp three-d-effect">
+        <p>©2025 Printo Document Services Pvt. Ltd.. All Rights Reserved</p>
+    </div>
+    <script>
+        // Toggle mobile menu
+        const toggle = document.getElementById('mobile-toggle');
+        const primaryNav = document.getElementById('primary-nav');
+        toggle.addEventListener('click', () => {
+
+            primaryNav.classList.toggle('active');
+        });
+
+        // Initialize animations on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.animate__animated').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
